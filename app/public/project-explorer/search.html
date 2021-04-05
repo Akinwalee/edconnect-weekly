@@ -6,10 +6,6 @@
         <title>Login</title>
     </head>
     <body>
-        <header>
-            <h1>Project Explorer</h1>
-            <h2>One Stop Database For Academic Projects</h2>
-        </header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <a class="navbar-brand" href="index.html">Project Explorer</a>
          <button class="navbar-toggler btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,32 +36,53 @@
      </nav>
      <main> 
             <section>
-                <h2>Search Project By</h2>
+                <h2>Project Gallery</h2>
+                <div class="p-3 mb-2 bg-light text-dark">
                 <form name="searchForm">
-                  <input name="searchTerm" type="text" placeholder="Project Name, Author, Abstract, Tags"> <br> <br>
-                  <label>Search By: </label>
+                  <div class="form-row">
+                  <div class="form-group col">
+                  <input class="form-control form-control-lg" name="searchTerm" type="text" placeholder="Project Name, Author, Abstract, Tags">
+                </div>
+                <div class="form-group col">
+                  <label class="form-label">Search By</label>
                   <select name="searchType">
                     <option value="Name">Name</option>
                     <option value="Authors">Authors</option>
                     <option value="Abstract">Abstract</option>
                     <option value="Tags">Tags</option>
-                  </select><br> <br>
-                  <input type="submit" value="Search">
+                  </select>
+                  <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+                </div>
+              </div>
+              </div>
                 </form>
             </section>
             <section>
                 <h2>Search Result</h2>
-                <div>
-                    <h3>Project 1</h3>
-                    <ul>
-                        <li>Name: Project 1</li>
-                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl.</li>
-                        <li>Program: Social Ecology</li>
-                        <li>Authors: John Dew, James Brown</li>
-                        <li>Tags: #Hostile, #GSW</li>
-                        <li>Year: 2018</li>
-                    </ul>
-                </div>
+                <div class="container">
+                  <div class="row">
+                  <div class="card col md-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h4 class="card-title text-primary">Project Title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">#html</a>
+                      <a href="#" class="card-link">#css</a>
+                      <a href="#" class="card-link">#javascript</a>
+                    </div>
+                  </div>
+                  <div class="card col md-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h4 class="card-title text-primary">Project Title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">#html</a>
+                      <a href="#" class="card-link">#css</a>
+                      <a href="#" class="card-link">#javascript</a>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
             </section>
           </main>    
     </body>
