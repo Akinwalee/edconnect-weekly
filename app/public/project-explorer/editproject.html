@@ -6,10 +6,7 @@
         <title>Login</title>
     </head>
     <body>
-        <header>
-            <h1>Project Explorer</h1>
-            <h2>One Stop Database For Academic Projects</h2>
-        </header>
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <a class="navbar-brand" href="index.html">Project Explorer</a>
          <button class="navbar-toggler btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,14 +35,17 @@
          </ul>
          </div>
      </nav> 
-            <main>
+            <main class="container">
                 <section>
                     <h2>Project 1</h2>
+                    <div class="row">
                     <ul>
-                        <li>Created By: Tom Cruise</li>
-                        <li>Date Created: 12/03/2016</li>
-                        <li>Last Updated: 04/05/2020</li>
+                        <li class="col">Created By: Tom Cruise</li>
+                        <li class="col">Date Created: 12/03/2016</li>
+                        <li class="col">Last Updated: 04/05/2020</li>
                     </ul>
+                    <button class="btn btn-primary col d-flex justify-content-end" type="submit">View Project</button>
+                  </div>
                 </section>
                 <section>
                     <h2>Edit Form</h2>
@@ -64,5 +64,12 @@
                     </form>
                 </section>
             </main>
+            <footer class="footer">
+              <div class="container" style="padding: 15px;">
+                <div class="row justify-content-end">
+                  <span class="text-muted">Project Explorer &copy; 2020 </span> Edconnect
+                </div>
+              </div>
+            </footer>
     </body>
 </html>            
