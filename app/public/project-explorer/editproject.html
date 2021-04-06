@@ -38,30 +38,58 @@
             <main class="container">
                 <section>
                     <h2>Project 1</h2>
-                    <div class="row">
-                    <ul>
+                    <div>
+                    <ul class="row">
                         <li class="col">Created By: Tom Cruise</li>
                         <li class="col">Date Created: 12/03/2016</li>
                         <li class="col">Last Updated: 04/05/2020</li>
+                        <a class="btn btn-primary" href="viewproject.html">View Project</a>
                     </ul>
-                    <button class="btn btn-primary col d-flex justify-content-end" type="submit">View Project</button>
+                    
                   </div>
                 </section>
                 <section>
-                    <h2>Edit Form</h2>
+                  <div class="row">
+                    <div class="col">
+                    <h2>Edit Project</h2>
                     <form name="editProject">
-                        <label>Project Name:</label><br>
-                        <input name="name" type="text"><br><br>
-                        <label>Project Abstract:</label><br>
-                        <textarea name="abstract"></textarea><br><br>
-                        <label>Authors:</label><br>
-                        <input name="authors" type="text"><br><br>
-                        <label>Tag(s):</label><br>
-                        <input name="tags" type="text"><br><br>
-                        <label>Edit Project</label><br>
-                        <input type="file" name="projectFile"><br><br>
-                        <input type="submit">
+                      <div class="form-group">
+                        <label class="form-label">Project Name:</label>
+                        <input class="form-control" name="name" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Project Abstract:</label>
+                        <textarea class="form-control" name="abstract"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Authors</label>
+                        <input class="form-control" name="authors" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Tag(s)</label>
+                        <input class="form-control" name="tags" type="text">
+                      </div>
+                      <button class="btn btn-primary col-auto" type="submit">Save</button>
+                      </form>
+                    </div>
+          
+                    <div class="col">
+                        <h2>Manage Project</h2>
+                        <form>
+                          <div class="form-group">
+                        <input class="form-control" type="file" name="projectFile" placeholder="Click to open file browser">
+                      </div>
+                        <div class="card">
+                          <div class="card-header">
+                            Project Files
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">No file uploaded yet</p>
+                          </div>
+                        </div>
                     </form>
+                  </div>
+                  </div>
                 </section>
             </main>
             <footer class="footer">
